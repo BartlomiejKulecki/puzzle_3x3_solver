@@ -1,0 +1,139 @@
+{
+    "puzzle": [
+        {
+            "filename": "IMG_20231030_091257.jpg",
+            "colors": {
+                "left": "green",
+                "up": "yellow",
+                "right": "blue",
+                "down": "red"
+            },
+            "parts": {
+                "left": "up",
+                "up": "down",
+                "right": "down",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091309.jpg",
+            "colors": {
+                "left": "green",
+                "up": "yellow",
+                "right": "red",
+                "down": "yellow"
+            },
+            "parts": {
+                "left": "down",
+                "up": "down",
+                "right": "up",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091319.jpg",
+            "colors": {
+                "left": "yellow",
+                "up": "green",
+                "right": "yellow",
+                "down": "blue"
+            },
+            "parts": {
+                "left": "down",
+                "up": "down",
+                "right": "up",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091330.jpg",
+            "colors": {
+                "left": "blue",
+                "up": "red",
+                "right": "green",
+                "down": "yellow"
+            },
+            "parts": {
+                "left": "down",
+                "up": "up",
+                "right": "up",
+                "down": "down"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091341.jpg",
+            "colors": {
+                "left": "blue",
+                "up": "red",
+                "right": "green",
+                "down": "yellow"
+            },
+            "parts": {
+                "left": "up",
+                "up": "down",
+                "right": "down",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091351.jpg",
+            "colors": {
+                "left": "green",
+                "up": "red",
+                "right": "blue",
+                "down": "yellow"
+            },
+            "parts": {
+                "left": "up",
+                "up": "down",
+                "right": "down",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091358.jpg",
+            "colors": {
+                "left": "green",
+                "up": "yellow",
+                "right": "yellow",
+                "down": "red"
+            },
+            "parts": {
+                "left": "down",
+                "up": "down",
+                "right": "up",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091407.jpg",
+            "colors": {
+                "left": "red",
+                "up": "blue",
+                "right": "red",
+                "down": "green"
+            },
+            "parts": {
+                "left": "down",
+                "up": "down",
+                "right": "up",
+                "down": "up"
+            }
+        },
+        {
+            "filename": "IMG_20231030_091416.jpg",
+            "colors": {
+                "left": "blue",
+                "up": "green",
+                "right": "red",
+                "down": "yellow"
+            },
+            "parts": {
+                "left": "down",
+                "up": "down",
+                "right": "up",
+                "down": "up"
+            }
+        }
+    ]
+}

@@ -3,6 +3,7 @@ import cv2
 import os
 import json
 import copy
+import argparse
 
 iterations = 0
 
@@ -118,7 +119,16 @@ def solve_recursive(partial_solution, remaining_elements):
     return None
 
 
-data_file = './data.json'
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-p", "--puzzle", required=True,
+   help="Specify which puzzle to solve",
+   choices=['turtles', 'cars', 'clowns', 'motors', 'teddys'])
+args = vars(ap.parse_args())
+puzzle_name = args['puzzle']
+
+
+data_file = './data/'+puzzle_name+'.json'
 with open(data_file, 'r') as file:
     data = json.load(file)
 
@@ -143,7 +153,7 @@ dim = 300
 solved_img = np.zeros((3*dim,3*dim,3), dtype=np.uint8)
 for i in range(3):
     for j in range(3):
-        image = cv2.imread('./imgs/'+board[i][j]['filename'])
+        image = cv2.imread('./imgs/'+puzzle_name+'/'+board[i][j]['filename'])
         image = cv2.resize(image, (dim, dim))
         if board[i][j]['angle'] == 90:
             image = cv2.rotate(image, cv2.ROTATE_90_COUNTERCLOCKWISE)
@@ -156,6 +166,6 @@ for i in range(3):
         solved_img[i*dim:(i+1)*dim, j*dim:(j+1)*dim] = image
 
 cv2.imshow('Solved puzzle', solved_img)
-cv2.imwrite('./resources/solved.jpg', solved_img)
+cv2.imwrite('./resources/solved_'+puzzle_name+'.jpg', solved_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
